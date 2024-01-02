@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="#" target="_blank">
-      <img src="https://raw.githubusercontent.com/mcekov/3dshop_ai/assets/banner.png" alt="Project Banner" />
+      <img src="https://raw.githubusercontent.com/mcekov/3dshop_ai/main/client/screenshots/banner.png" alt="Project Banner" />
     </a>
   <br />
   <br />
