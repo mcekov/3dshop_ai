@@ -2,6 +2,7 @@ import React from "react";
 import CustomButton from "./CustomButton";
 
 const FilePicker = ({ file, setFile, readFile }) => {
+  console.log(file);
   return (
     <div className="filepicker-container">
       <div className="flex flex-1 flex-col">
