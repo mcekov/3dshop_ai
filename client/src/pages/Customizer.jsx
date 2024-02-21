@@ -50,6 +50,15 @@ const Customizer = () => {
     }
   };
 
+  const handleSubmit = () => {
+    if (!prompt) return alert("Please enter a prompt");
+    try {
+      // Call backend to generate image
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   const handleDecals = (type, result) => {
     const decalType = DecalTypes[type];
 
