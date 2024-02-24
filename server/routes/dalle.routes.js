@@ -5,15 +5,15 @@ dotenv.config();
 
 const router = express.Router();
 
-/* const openai = new OpenAI({
+const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-}); */
+});
 
 router.route("/").get((req, res) => {
   res.status(200).json({ message: "Hello from DALLE.E ROUTES" });
 });
 
-/* router.route("/").post(async (req, res) => {
+router.route("/").post(async (req, res) => {
   try {
     const { prompt } = req.body;
 
@@ -31,6 +31,6 @@ router.route("/").get((req, res) => {
     console.error(error);
     res.status(500).json({ message: "Something went wrong" });
   }
-}); */
+});
 
 export default router;

@@ -50,16 +50,30 @@ const Customizer = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!prompt) return alert("Please enter a prompt");
     try {
-      // Call backend to generate image
+      setGeneratingImg(true);
+
+      const response = await fetch(`http://localhost:8080/api/v1/dalle`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt }),
+      });
+
+      const data = await response.json();
+      setGeneratingImg(false);
+
+      handleDecals("logoShirt", `data:image/png;base64,${data.photo}`);
     } catch (e) {
       console.log(e);
     }
   };
 
   const handleDecals = (type, result) => {
+    console.log(result);
     const decalType = DecalTypes[type];
 
     state[decalType.stateProperty] = result;
