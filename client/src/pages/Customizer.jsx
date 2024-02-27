@@ -98,6 +98,7 @@ const Customizer = () => {
         break;
       case "downloadPDF":
         // Downlaod as PDF
+        downloadCanvasToImage();
         break;
       default:
         state.isLogoTexture = true;
