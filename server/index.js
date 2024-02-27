@@ -1,14 +1,17 @@
 import express from "express";
 import cors from "cors";
 import * as dotenv from "dotenv";
+import morgan from "morgan";
 
 import dalleRoutes from "./routes/dalle.routes.js";
+
+const app = express();
 
 const PORT = process.env.PORT || 8080;
 
 dotenv.config();
 
-const app = express();
+app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 
