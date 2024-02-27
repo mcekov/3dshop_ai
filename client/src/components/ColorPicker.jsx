@@ -22,6 +22,8 @@ const ColorPicker = () => {
           "#f48668ff",
           "#f4a698ff",
           "#c5c392ff",
+          "#4C86A8",
+          "#E1DD8F",
         ]}
       />
     </div>

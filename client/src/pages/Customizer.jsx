@@ -96,6 +96,9 @@ const Customizer = () => {
       case "stylishShirt":
         state.isFullTexture = !activeFilterTab[tabName];
         break;
+      case "downloadPDF":
+        // Downlaod as PDF
+        break;
       default:
         state.isLogoTexture = true;
         state.isFullTexture = false;
