@@ -37,9 +37,9 @@ export const FilterTabs = [
     alt: "style-shirt-icon",
   },
   {
-    name: "downloadPDF",
+    name: "downloadPNG",
     icon: download,
-    alt: "download-pdf",
+    alt: "download-png",
   },
 ];
 
