@@ -14,8 +14,6 @@ if (stage === "production") {
   envConfig = require("./local").default;
 }
 
-console.log(stage);
-
 export default merge(
   {
     stage,
